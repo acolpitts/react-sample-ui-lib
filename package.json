@@ -4,7 +4,7 @@
   "description": "Same ui component library built with React and Emotion",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "styleguidist server"
   },
   "keywords": [],
@@ -22,9 +22,12 @@
     "@babel/preset-react": "^7.10.4",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "@testing-library/react": "^10.4.7",
     "babel-loader": "^8.1.0",
     "babel-plugin-emotion": "^10.0.33",
     "babel-plugin-module-resolver": "^4.0.0",
+    "jest": "^26.2.2",
+    "jest-emotion": "^10.0.32",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-styleguidist": "^11.0.8",
