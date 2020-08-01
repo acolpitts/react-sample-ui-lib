@@ -2,7 +2,7 @@ import { css } from '@emotion/core';
 
 export const font = css`
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 4px;
 `;
