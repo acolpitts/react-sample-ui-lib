@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "description": "Same ui component library built with React and Emotion",
   "main": "lib/index.js",
+  "browser": "lib/index.umd.js",
+  "module": "lib/index.es.js",
   "scripts": {
     "test": "jest",
     "build": "rollup -c",
+    "prepublishOnly": "rm -rf lib && npm run build",
+    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "start": "styleguidist server"
   },
   "keywords": [],
@@ -37,6 +41,8 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-uglify": "^6.0.4",
     "webpack": "^4.44.1"
   }
 }
