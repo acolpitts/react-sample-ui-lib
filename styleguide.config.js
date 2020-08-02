@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = {
   webpackConfig: {
     module: {
@@ -9,5 +10,10 @@ module.exports = {
         },
       ],
     },
+  },
+  title: 'React Sample UI Library',
+  styleguideDir: 'dist-docs',
+  moduleAliases: {
+    'react-sample-ui-lib': path.resolve(__dirname, 'src'),
   },
 };
